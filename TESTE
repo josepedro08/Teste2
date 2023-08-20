@@ -1,0 +1,13 @@
+Produto* CriarProduto(const char* nome, int codigo, float valor, int *data_de_validade) {
+	Produto* novoProduto = (Produto*)malloc(sizeof(Produto));
+	if (novoProduto != NULL) {
+    	strcpy(novoProduto->nome, nome);
+    	novoProduto->codigo = codigo;
+    	novoProduto->valor = valor;
+    	memcpy(novoProduto->data, date_de_validade, 3 * sizeof(int));
+	}
+	return novoProduto;
+}
+
+
+
